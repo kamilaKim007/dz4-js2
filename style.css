@@ -1,0 +1,33 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+.container{
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 30px;
+}
+.menu{
+display: flex;
+justify-content: center;
+align-items: center;
+column-gap: 55px;
+list-style-type: none;
+}
+.menu-item{
+color: blue;
+cursor: pointer;
+}
+.row{
+display: flex;
+gap: 60px;
+flex-wrap: wrap;
+}
+.card{
+width: calc(33.3333% - 20px);
+padding: 20px;
+}
+.cardImg{
+width: 100%;
+}
