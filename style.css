@@ -15,7 +15,7 @@ align-items: center;
 column-gap: 55px;
 list-style-type: none;
 }
-.menu-item{
+.menuItem{
 color: blue;
 cursor: pointer;
 }
