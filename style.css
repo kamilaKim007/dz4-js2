@@ -4,30 +4,15 @@ padding: 0;
 box-sizing: border-box;
 }
 .container{
-max-width: 1200px;
+max-width: 1000px;
 margin: 0 auto;
 padding: 0 30px;
 }
 .menu{
 display: flex;
-justify-content: center;
-align-items: center;
-column-gap: 55px;
-list-style-type: none;
-}
-.menuItem{
-color: blue;
-cursor: pointer;
 }
 .row{
 display: flex;
-gap: 60px;
+gap: 90px;
 flex-wrap: wrap;
-}
-.card{
-width: calc(33.3333% - 20px);
-padding: 20px;
-}
-.cardImg{
-width: 100%;
 }

@@ -2,24 +2,18 @@ let menu = document.querySelector('.menu')
 let row = document.querySelector('.row')
 
 
-const getProducts = () => {
-    fetch(`https://fakestoreapi.com/products?limit=2`)
+    fetch(`https://jsonplaceholder.typicode.com/users`)
     .then((res) => res.json())
     .then((res) => {
        res.forEach((item) => {
            row.innerHTML += `
            <div class = 'card'>
-           <img class = 'cardImg' src='${item.image}' alt = ''>
-           <h2 class = 'cardTitle'>${item.title}</h2>
-           <p class = 'cardSubtitle'>${item.description}</p>
-           <p class = ' cardPrice'> price: ${item.price}</p>
-           <p class = 'cardRating'> rating: ${item.rating.rate}</p>
+           <p class = 'name'>${item.name}</p>
+           <p class = ' username'> ${item.username}</p>
+           <p class = 'email'> ${item.email}</p>
+           <p class = 'phone'> ${item.phone}</p>
+           <p class = 'website'> ${item.website}</p>
            </div>
            `
        })
     })
-}
-getProducts('all')
-
-
-getCategories()
